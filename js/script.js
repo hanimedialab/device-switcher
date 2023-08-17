@@ -38,7 +38,7 @@ requirejs(
                         if (parameters.hasOwnProperty('url')) {
                             parameters.url = decodeURIComponent(parameters.url);
                             if (aIsDemo) {
-                                var regex = /^https?:\/\/(www\.)?(hani\.co\.kr|[^\#\?\/.]+\.hani\.co(\.kr|m))(\/|\?|$)/;
+                                var regex = /^https?:\/\/(www\.)?(hani\.co\.kr;
                                 if (!regex.test(parameters.url)) {
                                     console.log("[WARNING] In demo mode, only URLs to BBC web pages may be used as custom URLs.")
                                     parameters.url = 'http://www.hani.co.kr';
