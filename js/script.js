@@ -12,7 +12,7 @@ requirejs(
         function setUpSwitcher(aIsDemo) {
             var defaultParameters = {
                     device: 'mobile',
-                    url: 'http://bbcnewslabs.co.uk'
+                    url: 'https://m.hani.co.kr'
                 },
                 hash = (function() {
                     function getParameters(aParameters) {
@@ -38,10 +38,10 @@ requirejs(
                         if (parameters.hasOwnProperty('url')) {
                             parameters.url = decodeURIComponent(parameters.url);
                             if (aIsDemo) {
-                                var regex = /^https?:\/\/(www\.)?(bbcnewslabs\.co\.uk|[^\#\?\/.]+\.bbc\.co(\.uk|m))(\/|\?|$)/;
+                                var regex = /^https?:\/\/(www\.)?(hani\.co\.kr|[^\#\?\/.]+\.hani\.co(\.kr|m))(\/|\?|$)/;
                                 if (!regex.test(parameters.url)) {
                                     console.log("[WARNING] In demo mode, only URLs to BBC web pages may be used as custom URLs.")
-                                    parameters.url = 'http://www.bbc.co.uk/news';
+                                    parameters.url = 'http://www.hani.co.kr';
                                 }
                             }
                         }
