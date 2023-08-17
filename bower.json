@@ -1,9 +1,9 @@
 {
   "name": "device-switcher",
   "version": "0.0.1",
-  "homepage": "http://bbc.github.io/device-switcher",
+  "homepage": "http://hanimedialab.github.io/device-switcher",
   "author": {
-    "name": "BBC"
+    "name": "The Hankyoreh"
   },
   "main": "index.html",
   "ignore": [
